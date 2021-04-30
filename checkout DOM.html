@@ -1,0 +1,164 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css-Checkpoint-DOM .css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Document</title>
+    
+    </head>
+    <body style="background-image: url(https://i.pinimg.com/originals/94/e5/89/94e589998d55d2d65bb7b9620b0efb46.jpg);">
+        <header style="text-align: center;border: solid gold;" id="main-header" class="bg-success text-white p-4 mb-3" >
+            <div class="container">
+                <h1 id="header-title">* Sport Shoes Market *</h1>
+            </div>
+        </header>
+        <br><br>
+        <div class="container" >
+            <h2 class="title">Add Shoes</h2>
+                <form class="form-inline mb-3">
+                    <input type="text" class="form-control mr-2">
+                    <input type="submit" class="btn btn-dark" value="submit">
+                </form>
+            <br>
+            <h2 class="title" style="border: groove white 3px ;text-align: center;">My Shoes</h2>
+            <ul id="items" class="list-group" style="display: flex;flex-direction: row;flex-wrap: wrap;width: 100%;column-gap: 20px;row-gap: 25px;padding: 25px; ">
+                <li class="list-group-item" style="background-color: rgb(241, 228, 228);" id="item">
+                    <img src="https://www.tuttosport.com.tn/9779-large_default/adidas-courtjam-xj.jpg" alt="shoes" sizes="50px" height="200px" importance="sizes" >
+                    <h1> Adidas <button class="btn btn-danger btn-sm float right delete">X</button></h1>
+                    <br>
+                    <div class="title-price">
+                        <span>Price : </span>
+                        <span class="price" id="price-element"> 249 </span>
+                        <span> TND</span>
+                    </div>
+                    <br>     
+                    <div class="cart-quantity cart-column">
+                        <input id="quantity-element" class="cart-quantity-input" type="number" value="1" style="text-align: center; color: blue;font-size: small; ">
+                        <span><button onclick="changeColor(0)" class="like"  style="border: none;"><i class="fa fa-heart" style="font-size: xx-large;bottom: 100%;color: lightblue;"></i></button></span>
+                    </div>
+                      
+                </li>
+                <li class="list-group-item" style="background-color: rgb(241, 234, 234);" id="item">
+                    <img src="https://www.tuttosport.com.tn/13971-large_default/nike-air-max-invigor.jpg" alt="shoes" sizes="50px" height="200px" importance="sizes" >
+                    <h1> Nike Air <button class="btn btn-danger btn-sm float right delete">X</button></h1>
+                    <br>
+                    <div class="title-price">
+                        <span>Price : </span>
+                        <span class="price" id="price-element">339</span>
+                        <span> TND</span>
+                    </div>
+                    <br>
+                    <div class="cart-quantity cart-column">
+                        <input id="quantity-element" class="cart-quantity-input" type="number" value="1" style="text-align: center; color: blue; ;font-size: small; ">
+                        <span><button onclick="changeColor(1)" class="like" style="border: none;"><i class="fa fa-heart" style="font-size: xx-large;bottom: 100%;color: lightblue;"></i></button></span>
+                    </div>  
+                </li>
+                <li class="list-group-item" style="background-color:rgb(241, 228, 228);" id="item">
+                    <img src="https://www.tuttosport.com.tn/13122-large_default/Homme-diadora-Chaussure.jpg" alt="shoes" sizes="50px" height="200px" importance="sizes" >
+                        
+                    <h1> Diadora <button class="btn btn-danger btn-sm float right delete">X</button></h1>
+                    <br>
+                    <div class="title-price">
+                        <span>Price : </span>
+                        <span class="price" id="price-element">220</span>
+                        <span> TND</span>
+                    </div>
+                    <br>
+                    <div class="cart-quantity cart-column ">
+                        <input id="quantity-element" class="cart-quantity-input" type="number" value="1" style="text-align: center; color: blue; font-size: small; ">
+                        <span><button onclick="changeColor(2)" class="like"  style="border: none;"> <i class="fa fa-heart" style="font-size: xx-large;bottom: 100%;color: lightblue;"></i></button></span>
+                    </div>  
+                </li>   
+                <li class="list-group-item" style="background-color: rgb(241, 234, 234);" id="item">
+                    <img src="https://www.tuttosport.com.tn/5378-large_default/kappa-san-antonio.jpg" alt="shoes" sizes="50px" height="200px" importance="sizes"  >
+                    <h1> Kappa <button class="btn btn-danger btn-sm float right delete">X</button></h1>
+                    <br>
+                    <div class="title-price">
+                        <span>Price : </span>
+                        <span class="price" id="price-element">125</span>
+                        <span> TND</span>
+                    </div>
+                    <br>
+                    <div class="cart-quantity cart-column">
+                        <input id="quantity-element" class="cart-quantity-input" type="number" value="1" style="text-align: center; color: blue; ;font-size: small; ">
+                        <span><button onclick="changeColor(3)" class="like" style="border: none;"><i class="fa fa-heart" style="font-size: xx-large;bottom: 100%;color: lightblue;"></i></button></span>
+                    </div>  
+                </li>   
+                <li class="list-group-item" style="background-color: rgb(241, 234, 234);" id="item">
+                    <img src="https://www.tuttosport.com.tn/14056-large_default/nike-air-max-90.jpg" alt="shoes" sizes="50px" height="200px" importance="sizes"  >
+                    <h1> Nike Air <button class="btn btn-danger btn-sm float right delete">X</button></h1>
+                    <br>
+                    <div class="title-price">
+                        <span>Price : </span>
+                        <span class="price" id="price-element">425</span>
+                        <span> TND</span>
+                    </div>
+                    <br>
+                    <div class="cart-quantity cart-column">
+                        <input id="quantity-element" class="cart-quantity-input" type="number" value="1" style="text-align: center; color: blue; ;font-size: small; ">
+                        <span><button onclick="changeColor(4)" class="like" style="border: none;"><i class="fa fa-heart" style="font-size: xx-large;bottom: 100%;color: lightblue;"></i></button></span>
+                    </div>  
+                </li>   
+                <li class="list-group-item" style="background-color: rgb(241, 234, 234);" id="item">
+                    <img src="https://www.tuttosport.com.tn/17962-large_default/nike-air-max-vg-r.jpg" alt="shoes" sizes="50px" height="200px" importance="sizes"  >
+                    <h1> Nike Air  <button class="btn btn-danger btn-sm float right delete">X</button></h1>
+                    <br>
+                    <div class="title-price">
+                        <span>Price : </span>
+                        <span class="price" id="price-element">323</span>
+                        <span> TND</span>
+                    </div>
+                    <br>
+                    <div class="cart-quantity cart-column">
+                        <input id="quantity-element" class="cart-quantity-input" type="number" value="1" style="text-align: center; color: blue; ;font-size: small; ">
+                        <span><button onclick="changeColor(5)" class="like" style="border: none;"><i class="fa fa-heart" style="font-size: xx-large;bottom: 100%;color: lightblue;"></i></button></span>
+                    </div>  
+                </li>   
+                <li class="list-group-item" style="background-color: rgb(241, 234, 234);" id="item">
+                    <img src="https://www.tuttosport.com.tn/18339-large_default/adidas-nova-flow.jpg" alt="shoes" sizes="50px" height="200px" importance="sizes"  >
+                    <h1> Adidas <button class="btn btn-danger btn-sm float right delete">X</button></h1>
+                    <br>
+                    <div class="title-price">
+                        <span>Price : </span>
+                        <span class="price" id="price-element">165</span>
+                        <span> TND</span>
+                    </div>
+                    <br>
+                    <div class="cart-quantity cart-column">
+                        <input id="quantity-element" class="cart-quantity-input" type="number" value="1" style="text-align: center; color: blue; ;font-size: small; ">
+                        <span><button onclick="changeColor(6)" class="like" style="border: none;"><i class="fa fa-heart" style="font-size: xx-large;bottom: 100%;color: lightblue;"></i></button></span>
+                    </div>  
+                </li>   
+                <li class="list-group-item" style="background-color: rgb(241, 234, 234);" id="item">
+                    <img src="https://www.tuttosport.com.tn/19365-large_default/under-armour-victory.jpg" alt="shoes" sizes="50px" height="200px" importance="sizes"  >
+                    <h1> Victory  <button class="btn btn-danger btn-sm float right delete">X</button></h1>
+                    <br>
+                    <div class="title-price">
+                        <span>Price : </span>
+                        <span class="price" id="price-element">228</span>
+                        <span> TND</span>
+                    </div>
+                    <br>
+                    <div class="cart-quantity cart-column">
+                        <input id="quantity-element" class="cart-quantity-input" type="number" value="1" style="text-align: center; color: blue; ;font-size: small; ">
+                        <span><button onclick="changeColor(7)" class="like" style="border: none;"><i class="fa fa-heart" style="font-size: xx-large;bottom: 100%;color: lightblue;"></i></button></span>
+                    </div>  
+                </li>   
+            </ul>
+        
+        <br>
+        <button id="button" class="btn btn-dark btn-block">click here to accept ur achat </button><br>
+        <div id= "box" style=" float: right; width: 250px;height: 100px;background-color:darkslategray;color: blanchedalmond;text-align: center;"> $ </div>
+        </div>
+        <br><br><br>
+    </div><br><br><br>
+    <footer style="border: solid gold; padding: 10px;text-align: center; background-color: green;">
+        <h1 style="color: #f4f4f4;">* WELCOME *</h1>
+    </footer>
+
+    <script src="javascript-CheckpointDOM.js"></script>
+    </body>
+    </html>
